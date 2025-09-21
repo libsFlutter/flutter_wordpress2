@@ -8,11 +8,9 @@ documentation: https://gitlab.com/libsFlutter/flutter_wordpress2/-/wikis
 topics:
   - wordpress
   - cms
-  - content-management
   - flutter
-  - dart
   - api
-  - backward-compatibility
+  - compatibility
 
 environment:
   sdk: '>=3.8.0 <4.0.0'

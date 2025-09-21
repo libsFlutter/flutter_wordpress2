@@ -477,23 +477,12 @@ This project is licensed under the NativeMindNONC License - see the [LICENSE](LI
 
 ## 📈 **Roadmap**
 
-### Version 3.1 (Q2 2025)
-- [ ] GraphQL support for complex queries
-- [ ] Custom post types builder
-- [ ] Advanced search filters
-- [ ] Push notifications integration
-
-### Version 3.2 (Q3 2025)
-- [ ] WordPress Gutenberg block support
-- [ ] Advanced media management
 - [ ] Multi-site network support
 - [ ] Performance analytics dashboard
-
-### Version 4.0 (Q4 2025)
-- [ ] AI-powered content recommendations
+- [ ] Advanced search filters
+- [ ] Push notifications integration
 - [ ] Advanced SEO tools
-- [ ] E-commerce integration (WooCommerce)
-- [ ] Advanced user role management
+- [ ] AI-powered content recommendations
 
 ---
 
