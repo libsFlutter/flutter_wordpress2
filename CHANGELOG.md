@@ -1,3 +1,12 @@
+## 0.2.1
+
+* **Publishing Fixes**: Resolved all critical linting issues for pub.dev publication
+* **Export Conflicts**: Fixed ambiguous export errors in WordPress compatibility layer (Title and Guid conflicts)
+* **Async Issues**: Fixed await_only_futures error in socket manager service
+* **Performance**: Added const constructors for improved widget performance
+* **Code Quality**: Enhanced code quality with proper linting compliance
+* **Compatibility**: Improved backward compatibility with WordPress migration features
+
 ## 3.0.1
 
 * **Dependency Updates**: Upgraded build_runner, mockito, test and other dev dependencies
