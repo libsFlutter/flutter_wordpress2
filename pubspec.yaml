@@ -1,6 +1,6 @@
 name: flutter_wordpress2
 description: A comprehensive Flutter plugin for WordPress platform integration with enhanced architecture, backward compatibility, authentication, content management, offline support, and advanced features
-version: 0.0.1
+version: 0.2.1
 homepage: https://gitlab.com/libsFlutter/flutter_wordpress2
 repository: https://gitlab.com/libsFlutter/flutter_wordpress2
 issue_tracker: https://gitlab.com/libsFlutter/flutter_wordpress2/-/issues
