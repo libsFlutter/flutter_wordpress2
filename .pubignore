@@ -1,0 +1,56 @@
+# Generated files
+*.g.dart
+*.freezed.dart
+
+# Analysis files
+analysis_*.txt
+analysis_*.yaml
+analysis_grouped.txt
+analysis_errors_grouped.txt
+analysis_report*.txt
+
+# Coverage files
+coverage/
+lcov.info
+
+# Build files
+build/
+.dart_tool/
+.packages
+
+# Test files (keep test directory structure but exclude specific test artifacts)
+test_coverage.sh
+TEST_COVERAGE_REPORT.md
+
+# Development files
+DEVELOPMENT.md
+docker-compose.yml
+Dockerfile.web
+gitlab-variables.md
+update.sh
+
+# Documentation backup
+doc_backup/
+gitbook/
+
+# Example app (not needed for package distribution)
+example/
+
+# Screenshots (too large for package)
+screenshots/
+
+# IDE files
+*.iml
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
