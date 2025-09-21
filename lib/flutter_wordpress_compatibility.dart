@@ -10,7 +10,7 @@
 export 'src/compatibility/wordpress_compatibility.dart';
 export 'src/compatibility/models/wp_post.dart';
 export 'src/compatibility/models/wp_user.dart';
-export 'src/compatibility/models/wp_comment.dart';
+export 'src/compatibility/models/wp_comment.dart' hide Content, Guid, CommentHierarchy;
 export 'src/compatibility/models/wp_category.dart';
 export 'src/compatibility/models/wp_tag.dart';
 export 'src/compatibility/models/wp_media.dart';
