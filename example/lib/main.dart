@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:flutter_magento/flutter_magento.dart';
+import 'package:flutter_wordpress2/flutter_wordpress2.dart' as wp;
 import 'screens/home_screen.dart';
 import 'screens/auth_screen.dart';
-import 'screens/products_screen.dart';
-import 'screens/cart_screen.dart';
-import 'screens/config_screen.dart';
+import 'screens/posts_screen.dart';
 import 'screens/categories_screen.dart';
-import 'screens/device_info_screen.dart';
-import 'screens/profile_screen.dart';
+import 'screens/media_screen.dart';
+import 'screens/users_screen.dart';
+import 'screens/config_screen.dart';
 import 'providers/app_provider.dart';
 
 void main() async {
@@ -22,9 +21,6 @@ void main() async {
     debugPrint('Warning: Could not load .env file: $e');
   }
 
-  // Initialize image cache service
-  await ImageCacheService().initialize();
-
   runApp(const MyApp());
 }
 
@@ -34,10 +30,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => AppProvider())],
+      providers: [
+        ChangeNotifierProvider(create: (_) => AppProvider()),
+        ChangeNotifierProvider(create: (_) => wp.WordPressProvider()),
+      ],
       child: MaterialApp(
-        title: 'Flutter Magento Example',
-        navigatorKey: NavigationService.navigatorKey,
+        title: 'Flutter WordPress 2.0 Example',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           appBarTheme: const AppBarTheme(
@@ -71,34 +69,23 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _screens = [
     const HomeScreen(),
     const AuthScreen(),
-    const ProfileScreen(),
-    const ProductsScreen(),
+    const PostsScreen(),
     const CategoriesScreen(),
-    const CartScreen(),
-    const DeviceInfoScreen(),
+    const MediaScreen(),
+    const UsersScreen(),
     const ConfigScreen(),
   ];
 
   final List<BottomNavigationBarItem> _navItems = [
     const BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
     const BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Auth'),
-    const BottomNavigationBarItem(
-      icon: Icon(Icons.account_circle),
-      label: 'Profile',
-    ),
-    const BottomNavigationBarItem(
-      icon: Icon(Icons.shopping_bag),
-      label: 'Products',
-    ),
+    const BottomNavigationBarItem(icon: Icon(Icons.article), label: 'Posts'),
     const BottomNavigationBarItem(
       icon: Icon(Icons.category),
       label: 'Categories',
     ),
-    const BottomNavigationBarItem(
-      icon: Icon(Icons.shopping_cart),
-      label: 'Cart',
-    ),
-    const BottomNavigationBarItem(icon: Icon(Icons.info), label: 'Device'),
+    const BottomNavigationBarItem(icon: Icon(Icons.image), label: 'Media'),
+    const BottomNavigationBarItem(icon: Icon(Icons.people), label: 'Users'),
     const BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Config'),
   ];
 
