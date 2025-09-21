@@ -120,8 +120,6 @@ export 'flutter_magento.dart'
         MagentoSyncService,
         DeviceInfoService,
         ProfileService,
-        EnhancedHttpClient,
-        SocketManager,
         // Widgets
         ProductCard,
         DeviceInfoWidget,
