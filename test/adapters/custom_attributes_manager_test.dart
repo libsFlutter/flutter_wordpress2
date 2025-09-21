@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_magento/src/models/product_models.dart';
-import 'package:flutter_magento/src/adapters/custom_attributes_adapter.dart';
-import 'package:flutter_magento/src/adapters/custom_attributes_manager.dart';
-import 'package:flutter_magento/src/adapters/validation_result.dart';
+import 'package:flutter_wordpress2/src/models/product_models.dart';
+import 'package:flutter_wordpress2/src/adapters/custom_attributes_adapter.dart';
+import 'package:flutter_wordpress2/src/adapters/custom_attributes_manager.dart';
+import 'package:flutter_wordpress2/src/adapters/validation_result.dart';
 
 // Test adapter implementations
 class TestAdapter1 extends CustomAttributesAdapter<String> {

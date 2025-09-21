@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_magento/src/services/auth_service.dart';
+import 'package:flutter_wordpress2/src/services/auth_service.dart';
 
 void main() {
   group('AuthService', () {

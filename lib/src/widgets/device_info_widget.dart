@@ -520,7 +520,7 @@ Performance: ${deviceInfo.performanceInfo.category.displayName} (${deviceInfo.pe
         title: const Text('Device Details'),
         content: SizedBox(
           width: double.maxFinite,
-          child: SingleChildScrollView(
+          child: const SingleChildScrollView(
             child: DeviceInfoWidget(
               displayStyle: DeviceInfoDisplayStyle.list,
               showActions: false,

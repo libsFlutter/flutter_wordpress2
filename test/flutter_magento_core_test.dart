@@ -1,9 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_magento/src/flutter_magento_core.dart';
-import 'package:flutter_magento/src/services/magento_api_service.dart';
-import 'package:flutter_magento/src/services/auth_service.dart';
-import 'package:flutter_magento/src/services/cart_service.dart';
-import 'package:flutter_magento/src/exceptions/magento_exception.dart';
+import 'package:flutter_wordpress2/src/flutter_magento_core.dart';
+import 'package:flutter_wordpress2/src/services/magento_api_service.dart';
+import 'package:flutter_wordpress2/src/services/auth_service.dart';
+import 'package:flutter_wordpress2/src/services/cart_service.dart';
+import 'package:flutter_wordpress2/src/exceptions/magento_exception.dart';
 import 'package:mocktail/mocktail.dart';
 
 // Mock classes

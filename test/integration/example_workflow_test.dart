@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_magento/src/flutter_magento_core.dart';
-import 'package:flutter_magento/src/exceptions/magento_exception.dart';
+import 'package:flutter_wordpress2/src/flutter_magento_core.dart';
+import 'package:flutter_wordpress2/src/exceptions/magento_exception.dart';
 
 /// Integration test that covers the main workflow demonstrated in the example app
 /// This test simulates the complete user journey from initialization to checkout

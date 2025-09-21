@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_magento/flutter_magento.dart';
+import 'package:flutter_wordpress2/flutter_magento.dart';
 
 void main() {
   group('DeviceInfoService', () {

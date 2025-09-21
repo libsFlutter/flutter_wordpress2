@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_magento/src/flutter_magento_core.dart';
+import 'package:flutter_wordpress2/src/flutter_magento_core.dart';
 
 /// Simplified tests for the main library functionality
 /// These tests focus on the core functionality without complex mocking

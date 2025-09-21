@@ -93,6 +93,12 @@
 
 library flutter_wordpress2;
 
+import 'package:flutter/foundation.dart';
+import 'src/compatibility/wordpress_compatibility.dart' show WordPress;
+import 'src/compatibility/wp_constants.dart' show WordPressAuthenticator;
+import 'src/compatibility/models/wp_post.dart' show Post;
+import 'src/compatibility/params/wp_params_post_list.dart' show ParamsPostList;
+
 // Export backward compatibility layer (original flutter_wordpress API)
 export 'flutter_wordpress_compatibility.dart';
 
