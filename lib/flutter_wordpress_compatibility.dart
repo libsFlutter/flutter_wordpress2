@@ -14,7 +14,7 @@ export 'src/compatibility/models/wp_comment.dart' hide Content, Guid, CommentHie
 export 'src/compatibility/models/wp_category.dart';
 export 'src/compatibility/models/wp_tag.dart';
 export 'src/compatibility/models/wp_media.dart' hide Guid, Title;
-export 'src/compatibility/models/wp_page.dart' hide Guid, Title;
+export 'src/compatibility/models/wp_page.dart' hide Guid, Title, Content;
 export 'src/compatibility/params/wp_params_post_list.dart';
 export 'src/compatibility/params/wp_params_comment_list.dart';
 export 'src/compatibility/params/wp_params_user_list.dart';
@@ -33,4 +33,6 @@ export 'flutter_magento.dart'
         AuthApi,
         ProductApi,
         CartApi,
-        OrderApi;
+        OrderApi,
+        // Hide Category to avoid conflict with WordPress Category
+        Category;
